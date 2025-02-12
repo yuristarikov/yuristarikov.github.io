@@ -8,14 +8,14 @@ body {
   
   @font-face {
     font-family: 'Moderustic';
-    src: url('./fonts/Moderustic-ExtraBold.otf') format('truetype');
+    src: url('./fonts/SONGER_G_ExtraBold.otf') format('truetype');
     font-weight: 800;
     font-style: normal;
   }
   
   @font-face {
     font-family: 'Moderustic';
-    src: url('./fonts/Moderustic-Bold.otf') format('truetype');
+    src: url('./fonts/SONGER_G_Medium.otf') format('truetype');
     font-weight: 700;
     font-style: normal;
   }
@@ -34,7 +34,7 @@ body {
     font-family: 'Moderustic', sans-serif;
     font-weight: 800;
     color: #ffffff;
-    font-size: 80px;
+    font-size: 90px;
     -webkit-text-stroke: 2px #000000;
     text-shadow: 6.93px 4px 0px #000000;
     margin: 0;
