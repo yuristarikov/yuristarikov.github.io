@@ -59,10 +59,12 @@ body {
   }  
 
 footer a {
-    color: #000000; 
+    font-family: 'Moderustic', sans-serif;
+    font-weight: 700;
+    color: #345995; 
     text-decoration: underline;
     font-weight: 700; 
-    font-size: 25px;
+    font-size: 20px;
     -webkit-text-stroke: none;
     text-shadow: none;
     margin-right: 10px;
@@ -92,4 +94,13 @@ footer a {
   
   footer .no-link:hover {
     color: inherit;
+  }
+
+  .link.highlighted {
+    color: #345995; 
+    text-decoration: underline;
+  }
+  
+  .link.highlighted:hover {
+    color: #FF7F11; /* Цвет при наведении, можно изменить */
   }
