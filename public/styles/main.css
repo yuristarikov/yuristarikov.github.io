@@ -1,108 +1,79 @@
+@font-face {
+    font-family: 'JetBrains';
+    src: url('./fonts/JetBrainsMono-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background: url(./images/backgrounds.jpg) no-repeat center center fixed;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-  }
-  
-  @font-face {
-    font-family: 'Songer';
-    src: url('./fonts/JetBrainsMono-ExtraBold.otf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'Songer';
-    src: url('./fonts/JetBrainsMono-SemiBold.otf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .info {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(calc(-50% - 4vw), calc(-50% - 4vw));
-    text-align: left;
-    width: 80vw;
-    max-width: 800px;
-  }
-  
-  h1 {
-    font-family: 'Songer', sans-serif;
-    font-weight: 800;
-    color: #ffffff;
-    font-size: 90px;
-    -webkit-text-stroke: 2px #000000;
-    text-shadow: 5.93px 3px 0px #000000;
-    margin: 0;
-    padding: 0;
-    word-spacing: -30px;
-  }
-  
-  .line-1,
-  .line-2,
-  .line-3 {
-    font-family: 'Songer', sans-serif;
-    font-weight: 700;
-    color: #000000;
-    font-size: 20px;
-    -webkit-text-stroke: none;
-    text-shadow: none;
-    margin: 10px 0;
-    padding-left: 4px;
-    word-spacing: -5px;
-  }
-  
-  .line-1 {
-    margin-top: 20px;
-  }  
-
-footer a {
-    font-family: 'Songer', sans-serif;
-    font-weight: 700;
-    color: #345995; 
-    text-decoration: underline;
-    font-weight: 700; 
-    font-size: 17px;
-    -webkit-text-stroke: none;
-    text-shadow: none;
-    margin-right: 10px;
-    transition: color 0.3s;
-  }
-  
-  footer a:hover {
-    color: #FF7F11;
-  }
-  
-  footer {
+    height: 100vh;
+    width: auto;
+    background-color: #282A36;
+    color: #F8F8F2;
+    font-family: JetBrains, sans-serif;
     display: flex;
-    justify-content: left;
-    align-items: left;
-    flex-wrap: wrap;
-    margin-top: 60px;
-  }
-  
-  footer a:last-child {
-    margin-right: 0;
-  }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
 
-  footer .no-link {
+.content {
+    display: flex;
+}
+
+.info {
+    width: 60%;
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+main {
+    flex-grow: 1;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #66D9EF;
+}
+
+p {
+    font-size: 1em;
+    color: #F8F8F2;
+}
+
+.link {
+    color: #FF79C6; /* Цвет текста для ссылок */
     text-decoration: none;
-    color: inherit;
-  }  
-  
-  footer .no-link:hover {
-    color: inherit;
-  }
+    margin-right: 2px; /* Уменьшаем расстояние между ссылками */
+}
 
-  .link.highlighted {
-    color: #345995; 
+.link:hover {
+    color: #FF79C6;
     text-decoration: underline;
-  }
-  
-  .link.highlighted:hover {
-    color: #FF7F11; /* Цвет при наведении, можно изменить */
-  }
+}
+
+.link:visited {
+    color: #FF79C6;
+}
+
+footer {
+    margin: 100px 0 0 0;
+    line-height: 40px;
+    font-size: 0.9em;
+}
+
+.main-paragraph {
+    margin-bottom: 20px; /* Установите нужное значение отступа */
+}
