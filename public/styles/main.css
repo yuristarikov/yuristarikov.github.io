@@ -54,9 +54,9 @@ p {
 }
 
 .link {
-    color: #FF79C6; /* Цвет текста для ссылок */
+    color: #FF79C6;
     text-decoration: none;
-    margin-right: 2px; /* Уменьшаем расстояние между ссылками */
+    margin-right: 2px;
 }
 
 .link:hover {
@@ -75,5 +75,15 @@ footer {
 }
 
 .main-paragraph {
-    margin-bottom: 20px; /* Установите нужное значение отступа */
+    margin-bottom: 20px;
+}
+
+@media (max-width: 430px) {
+    .gif {
+        display: none; 
+    }
+    .info {
+        padding: 20px; 
+        width: 100%;
+    }
 }
