@@ -51,6 +51,7 @@ h1 {
 p {
     font-size: 1em;
     color: #F8F8F2;
+    word-spacing: -5px;
 }
 
 .link {
