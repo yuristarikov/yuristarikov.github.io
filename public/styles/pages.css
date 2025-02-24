@@ -78,7 +78,7 @@ body {
 
 .post-description {
     margin-top: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .post-from {
@@ -98,6 +98,7 @@ body {
 
 .date {
     color: #66D9EF;
+    margin-top: 10px;
 }
 
 h1 {
@@ -106,14 +107,14 @@ h1 {
     font-size: 2.5em;
 }
 
+.description {
+    margin-bottom: 30px;
+}
+
 p {
     font-size: 1em;
     color: #F8F8F2;
     word-spacing: -5px;
-}
-
-.description {
-    margin-bottom: 30px;
 }
 
 ::-webkit-scrollbar {
@@ -140,4 +141,19 @@ p {
 
 .link:visited {
     color: #FF79C6;
+}
+
+@media (max-width: 430px) {
+    .posts {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .post-preview {
+        height: auto;
+    }
+
+    .list-of-posts {
+        margin-left: 0;
+    }
 }
