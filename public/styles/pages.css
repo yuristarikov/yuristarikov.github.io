@@ -29,6 +29,8 @@ body {
     flex-direction: row;
     justify-content: space-between;
     gap: 15px;
+    margin: 0;
+    padding: 10px;
 }
 
 .post-preview {
@@ -58,8 +60,13 @@ body {
     margin-top: 15vh;
 }
 
+.list-of-posts {
+    margin: 0;
+    padding: 0;
+}
+
 .list-of-posts li {
-    margin-bottom: 100px;
+    margin-bottom: 1px;
 }
 
 .list-of-posts li:last-child {

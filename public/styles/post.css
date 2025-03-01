@@ -85,18 +85,18 @@ p {
 }
 
 .link {
-    color: #FF79C6;
+    color: #66D9EF;
     text-decoration: none;
     margin-right: 2px;
 }
 
 .link:hover {
-    color: #FF79C6;
+    color: #66D9EF;
     text-decoration: underline;
 }
 
 .link:visited {
-    color: #FF79C6;
+    color: #66D9EF;
 }
 
 @media (max-width: 430px) {
