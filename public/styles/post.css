@@ -36,6 +36,33 @@ body {
     }
 }
 
+@media (max-width: 770px) {
+    .content {
+        width: 90%; 
+        padding: 0 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 0.9em;
+        width: 100%;
+        text-align: left;
+        word-spacing: -20px;
+    }
+
+    .subtitle {
+        font-size: 1.3em; 
+        text-align: left;
+    }
+
+    .my-image-class {
+        max-width: 100%;
+    }
+}
+
 h1 {
     margin-top: 20px;
     margin-bottom: 30px;
@@ -48,7 +75,8 @@ h1 {
 }
 
 p {
-    width: 750px;
+    width: 100%;
+    max-width: 750px;
     font-size: 1em;
     color: #F8F8F2;
     word-spacing: -5px;
@@ -99,7 +127,8 @@ p {
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: left;
-    width: 750px;
+    width: 100%;
+    max-width: 750px;
 }
 
 .my-image-class {
