@@ -38,10 +38,6 @@ body {
     border: 5px solid #66D9EF
 }
 
-.post-preview:hover {
-    border: 5px dashed #66D9EF
-}
-
 @media screen and (max-width: 770px) {
     .post-preview{
         display: none;
