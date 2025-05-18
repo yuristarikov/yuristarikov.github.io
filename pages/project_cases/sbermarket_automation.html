@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#FF79C6" />
+    <meta name="description" content="qa engineer" />
+
+    <link rel="manifest" href="./src/manifest.webmanifest" />
+    <link rel="preload" href="../../public/styles/project.css" as="style" />
+    <link rel="stylesheet" href="../../public/styles/project.css" />
+    <title>sbermarket</title>
+  </head>
+  <body>
+    <main class="posts">
+      <a href="./projects.html" class="link">&lt; назад</a>
+
+      <section>
+        <h2>сбермаркет</h2>
+
+        <h3>контекст</h3>
+        <p>регрессионное тестирование занимало 1–2 дня, что тормозило релизы и повышало рутину. важно было сократить время проверки, минимизировать человеческий фактор и обеспечить уверенность в качестве при быстрой поставке фичей.</p>
+
+        <h4>что было сделано</h4>
+        <ul>
+          <li>совместно со вторым QA в команде внедрил автоматизацию e2e и интеграционных тестов для ключевых бизнес-сценариев;</li>
+          <li>тесты писались на языке разработки — <strong>Golang</strong> — с использованием testify, fixtures и моков;</li>
+          <li>автоматизация происходила в текущем или следующем спринте после релиза фичи, без раздувания техдолга;</li>
+          <li>овместно со вторым QA в команде внедрил практику работы с автотестами среди разработчиков: фиксы, локальные прогоны, поддержка тестов в актуальном состоянии.</li>
+        </ul>
+
+        <h4>результаты</h4>
+        <ul>
+          <li>достигнуто <strong>80–90% покрытия</strong> автотестами для критичного функционала;</li>
+          <li>время регресса сократилось с <strong>1–2 дней</strong> до <strong>5–10 минут</strong>;</li>
+          <li>разработчики стали воспринимать автотесты как часть своего процесса, не только зоны QA.</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

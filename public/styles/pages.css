@@ -12,15 +12,11 @@
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     width: auto;
     background-color: #282A36;
     color: #F8F8F2;
     font-family: JetBrains, sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     transition: all 0.5s;
 }
 
@@ -51,9 +47,9 @@ body {
 .posts {
     width: 750px;
     padding: 10px 50px;
+    margin: 40px auto;
     display: flex;
     flex-direction: column;
-    margin-top: 15vh;
 }
 
 .list-of-posts {
