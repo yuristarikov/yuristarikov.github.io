@@ -1,43 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#FF79C6" />
+    <meta name="theme-color" content="#ffffff" />
     <meta name="description" content="qa engineer" />
 
-    <link rel="manifest" href="./src/manifest.webmanifest" />
-    <link rel="preload" href="../../public/styles/project.css" as="style" />
-    <link rel="stylesheet" href="../../public/styles/project.css" />
+    <link rel="manifest" href="/src/manifest.webmanifest" />
+    <link rel="preload" href="/public/styles/main.css" as="style" />
+    <link rel="stylesheet" href="/public/styles/main.css" />
     <title>sbermarket</title>
   </head>
   <body>
-    <main class="posts">
-      <a href="./projects.html" class="link">&lt; назад</a>
+    <header class="c-header">
+      <div class="c-header__inner l-container">
+        <nav class="c-nav" aria-label="главная навигация">
+          <a class="c-nav__link" href="/pages/project_cases/projects.html">проекты</a>
+          <a class="c-nav__link" href="/pages/public_talks/public_talks.html">выступления</a>
+          <a class="c-nav__link" href="/pages/cv/cv_starikov_yuri.md" download>резюме</a>
+        </nav>
+      </div>
+    </header>
 
-      <section>
-        <h2>сбермаркет</h2>
+    <main class="c-main l-container p-case">
+      <section class="c-section l-stack l-stack--md">
+        <a href="/pages/project_cases/projects.html" class="c-section-header__action">&lt; назад</a>
 
-        <h3>контекст</h3>
-        <p>в двух продуктовых командах не был выстроен QA-процесс: не было тестовой документации, артефактов, стратегий и участия QA на ранних этапах. в новых проектах требовалось создать процесс с нуля — от требований до продакшна.</p>
+        <article class="c-card c-card--case-header l-stack l-stack--sm">
+          <h1>сбермаркет</h1>
+          <div class="c-badge-row">
+            <span class="c-badge">сбермаркет</span>
+            <span class="c-badge c-badge--muted">shift-left</span>
+            <span class="c-badge c-badge--muted">тест-планы</span>
+            <span class="c-badge c-badge--muted">регламенты</span>
+          </div>
+          <div class="c-badge-row">
+            <span class="c-badge c-badge--accent">1-2 инцидента в квартал</span>
+            <span class="c-badge c-badge--accent">2-3 дней -> несколько часов</span>
+            <span class="c-badge c-badge--accent">1-2 спринтов -> одна неделя</span>
+          </div>
+        </article>
 
-        <h4>что было сделано</h4>
-        <ul>
-          <li>внедрил процессы тестирования, включая <strong>shift-left</strong>, предварительную проработку требований и тест-планов;</li>
-          <li>формализировал систему тестовой документации: чек-листы, тест-кейсы, тест-планы, баг-репорты;</li>
-          <li>внедрил регламенты работы с задачами, дефектами, полями и статусами в трекерах;</li>
-          <li>приобщил QA к анализу инцидентов и постмортемов.</li>
-        </ul>
+        <article class="p-case__content l-stack l-stack--md">
+          <section>
+            <h2>контекст</h2>
+            <p>в двух продуктовых командах не был выстроен QA-процесс: не было тестовой документации, артефактов, стратегий и участия QA на ранних этапах. в новых проектах требовалось создать процесс с нуля - от требований до продакшна.</p>
+          </section>
 
-        <h4>результаты</h4>
-        <ul>
-          <li>количество критических багов на проде снизилось до <strong>1–2 инцидентов в квартал</strong> (были кварталы — без инцидентов);</li>
-          <li>время тестирования задач сократилось с <strong>2–3 дней</strong> до <strong>нескольких часов</strong>;</li>
-          <li>цикл релиза фичи сократился с <strong>1–2 спринтов</strong> до <strong>одной недели</strong>;</li>
-          <li>повысилась предсказуемость и прозрачность QA внутри команд и для менеджмента.</li>
-        </ul>
+          <section>
+            <h3>что было сделано</h3>
+            <ul>
+              <li>внедрил процессы тестирования, включая <strong>shift-left</strong>, предварительную проработку требований и тест-планов;</li>
+              <li>формализировал систему тестовой документации: чек-листы, тест-кейсы, тест-планы, баг-репорты;</li>
+              <li>внедрил регламенты работы с задачами, дефектами, полями и статусами в трекерах;</li>
+              <li>приобщил QA к анализу инцидентов и постмортемов.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>результаты</h3>
+            <ul>
+              <li>количество критических багов на проде снизилось до <strong>1-2 инцидентов в квартал</strong> (были кварталы - без инцидентов);</li>
+              <li>время тестирования задач сократилось с <strong>2-3 дней</strong> до <strong>нескольких часов</strong>;</li>
+              <li>цикл релиза фичи сократился с <strong>1-2 спринтов</strong> до <strong>одной недели</strong>;</li>
+              <li>повысилась предсказуемость и прозрачность QA внутри команд и для менеджмента.</li>
+            </ul>
+          </section>
+        </article>
       </section>
     </main>
+
+    <footer class="c-footer">
+      <div class="c-footer__inner l-container">
+        <div class="c-footer__grid">
+          <section class="c-footer__col">
+            <h2 class="c-footer__title">навигация</h2>
+            <a class="c-footer__link" href="/">главная</a>
+            <a class="c-footer__link" href="/pages/project_cases/projects.html">проекты</a>
+            <a class="c-footer__link" href="/pages/public_talks/public_talks.html">выступления</a>
+            <a class="c-footer__link" href="/pages/cv/cv_starikov_yuri.md" download>резюме</a>
+          </section>
+          <section class="c-footer__col">
+            <h2 class="c-footer__title">контакты</h2>
+            <a class="c-footer__link" href="mailto:yuristarikov95@gmail.com">почта</a>
+            <a class="c-footer__link" href="https://t.me/yuristarikov" target="_blank" rel="noopener">телеграм</a>
+          </section>
+          <section class="c-footer__col">
+            <h2 class="c-footer__title">в сети</h2>
+            <a class="c-footer__link" href="https://solvery.io/ru/mentor/yuristarikov" target="_blank" rel="noopener">solvery</a>
+            <a class="c-footer__link" href="https://github.com/yuristarikov" target="_blank" rel="noopener">github</a>
+            <a class="c-footer__link" href="https://www.linkedin.com/in/yuristarikov/" target="_blank" rel="noopener">linkedin</a>
+            <a class="c-footer__link" href="https://hh.ru/resume/756e5e0fff05bcca490039ed1f626842494479" target="_blank" rel="noopener">hh</a>
+            <a class="c-footer__link" href="https://career.habr.com/yuristarikov" target="_blank" rel="noopener">habr</a>
+          </section>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
