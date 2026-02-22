@@ -1,42 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#FF79C6" />
+    <meta name="theme-color" content="#ffffff" />
     <meta name="description" content="qa engineer" />
 
-    <link rel="manifest" href="./src/manifest.webmanifest" />
-    <link rel="preload" href="../../public/styles/project.css" as="style" />
-    <link rel="stylesheet" href="../../public/styles/project.css" />
+    <link rel="manifest" href="/src/manifest.webmanifest" />
+    <link rel="preload" href="/public/styles/main.css" as="style" />
+    <link rel="stylesheet" href="/public/styles/main.css" />
     <title>docsvision</title>
   </head>
   <body>
-    <main class="posts">
-      <a href="./projects.html" class="link">&lt; назад</a>
+    <header class="c-header">
+      <div class="c-header__inner l-container">
+        <nav class="c-nav" aria-label="главная навигация">
+          <a class="c-nav__link" href="/pages/project_cases/projects.html">проекты</a>
+          <a class="c-nav__link" href="/pages/public_talks/public_talks.html">выступления</a>
+          <a class="c-nav__link" href="/pages/cv/cv_starikov_yuri.md" download>резюме</a>
+        </nav>
+      </div>
+    </header>
 
-      <section>
-        <h2>docsvision</h2>
+    <main class="c-main l-container p-case">
+      <section class="c-section l-stack l-stack--md">
+        <a href="/pages/project_cases/projects.html" class="c-section-header__action">&lt; назад</a>
 
-        <h3>контекст</h3>
-        <p>на момент старта в компании у меня не было коммерческого опыта в тестировании. основной задачей было освоение профессии с нуля, закрепление практики и рост до самостоятельного QA.</p>
+        <article class="c-card c-card--case-header l-stack l-stack--sm">
+          <h1>docsvision</h1>
+          <div class="c-badge-row">
+            <span class="c-badge">docsvision</span>
+            <span class="c-badge c-badge--muted">функциональное тестирование</span>
+            <span class="c-badge c-badge--muted">регрессионное тестирование</span>
+            <span class="c-badge c-badge--muted">интеграционное тестирование</span>
+            <span class="c-badge c-badge--muted">приемочное тестирование</span>
+          </div>
+          <div class="c-badge-row">
+            <span class="c-badge c-badge--accent">3 месяца -> 100% задач</span>
+            <span class="c-badge c-badge--accent">6 месяцев -> кураторство новичков</span>
+            <span class="c-badge c-badge--accent">~30% багов в прод</span>
+          </div>
+        </article>
 
-        <h4>первые шаги и обучение</h4>
-        <ul>
-          <li>освоил основные виды тестирования: функциональное, регрессионное, интеграционное, приемочное;</li>
-          <li>научился писать баг-репорты, документировать ошибки, формировать чек-листы и тест-кейсы;</li>
-          <li>разобрался с баг-трекинговыми системами и внутренней документацией компании;</li>
-          <li>проявлял инициативу: самостоятельно обучался, обращался за фидбеком, помогал коллегам с задачами.</li>
-        </ul>
+        <article class="p-case__content l-stack l-stack--md">
+          <section>
+            <h2>контекст</h2>
+            <p>на момент старта в компании у меня не было коммерческого опыта в тестировании. основной задачей было освоение профессии с нуля, закрепление практики и рост до самостоятельного QA.</p>
+          </section>
 
-        <h4>результаты</h4>
-        <ul>
-          <li>через 3 месяца начал самостоятельно закрывать 100% задач по тестированию в своей зоне ответственности;</li>
-          <li>через 6 месяцев начал курировать новичков и помогать в адаптации новых QA;</li>
-          <li>сократил количество багов, ускользающих в прод, примерно на <strong>30%</strong> по сравнению с предыдущими релизами.</li>
-        </ul>
+          <section>
+            <h3>первые шаги и обучение</h3>
+            <ul>
+              <li>освоил основные виды тестирования: функциональное, регрессионное, интеграционное, приемочное;</li>
+              <li>научился писать баг-репорты, документировать ошибки, формировать чек-листы и тест-кейсы;</li>
+              <li>разобрался с баг-трекинговыми системами и внутренней документацией компании;</li>
+              <li>проявлял инициативу: самостоятельно обучался, обращался за фидбеком, помогал коллегам с задачами.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>результаты</h3>
+            <ul>
+              <li>через 3 месяца начал самостоятельно закрывать 100% задач по тестированию в своей зоне ответственности;</li>
+              <li>через 6 месяцев начал курировать новичков и помогать в адаптации новых QA;</li>
+              <li>сократил количество багов, ускользающих в прод, примерно на <strong>30%</strong> по сравнению с предыдущими релизами.</li>
+            </ul>
+          </section>
+        </article>
       </section>
     </main>
+
+    <footer class="c-footer">
+      <div class="c-footer__inner l-container">
+        <div class="c-footer__grid">
+          <section class="c-footer__col">
+            <h2 class="c-footer__title">навигация</h2>
+            <a class="c-footer__link" href="/">главная</a>
+            <a class="c-footer__link" href="/pages/project_cases/projects.html">проекты</a>
+            <a class="c-footer__link" href="/pages/public_talks/public_talks.html">выступления</a>
+            <a class="c-footer__link" href="/pages/cv/cv_starikov_yuri.md" download>резюме</a>
+          </section>
+          <section class="c-footer__col">
+            <h2 class="c-footer__title">контакты</h2>
+            <a class="c-footer__link" href="mailto:yuristarikov95@gmail.com">почта</a>
+            <a class="c-footer__link" href="https://t.me/yuristarikov" target="_blank" rel="noopener">телеграм</a>
+          </section>
+          <section class="c-footer__col">
+            <h2 class="c-footer__title">в сети</h2>
+            <a class="c-footer__link" href="https://solvery.io/ru/mentor/yuristarikov" target="_blank" rel="noopener">solvery</a>
+            <a class="c-footer__link" href="https://github.com/yuristarikov" target="_blank" rel="noopener">github</a>
+            <a class="c-footer__link" href="https://www.linkedin.com/in/yuristarikov/" target="_blank" rel="noopener">linkedin</a>
+            <a class="c-footer__link" href="https://hh.ru/resume/756e5e0fff05bcca490039ed1f626842494479" target="_blank" rel="noopener">hh</a>
+            <a class="c-footer__link" href="https://career.habr.com/yuristarikov" target="_blank" rel="noopener">habr</a>
+          </section>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

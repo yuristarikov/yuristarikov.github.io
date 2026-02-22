@@ -1,43 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#FF79C6" />
+    <meta name="theme-color" content="#ffffff" />
     <meta name="description" content="qa engineer" />
 
-    <link rel="manifest" href="./src/manifest.webmanifest" />
-    <link rel="preload" href="../../public/styles/pages.css" as="style" />
-    <link rel="stylesheet" href="../../public/styles/pages.css" />
+    <link rel="manifest" href="/src/manifest.webmanifest" />
+    <link rel="preload" href="/public/styles/main.css" as="style" />
+    <link rel="stylesheet" href="/public/styles/main.css" />
     <title>yuri starikov</title>
   </head>
   <body>
-    <main class="posts">
-      <a href="../../index.html" class="link">&lt; назад</a>
-      <h1>публичные выступления:</h1>
-      <p class="description">мои публичные выступления: статьи и доклады.</p>
-      <ol class="list-of-posts">
-        <li>
-          <section class="post">
-              <div>
-                <p class="post-name">coming soon</p>
-                <p class="post-description">
-                  coming soon
-                  <span class="date">(00/00/0000)</span>
-                </p>
-              </div>
-              <a
-                href=""
-                class="link post-slides"
-                rel="noopener"
-                target="_blank"
-                >
-                <img class="post-preview" src="../public/styles/images/test.jpeg" alt="preview">
-              </a>
-            </section>
-        </li>
-      </ol>
+    <header class="c-header">
+      <div class="c-header__inner l-container">
+        <nav class="c-nav" aria-label="главная навигация">
+          <a class="c-nav__link" href="/pages/project_cases/projects.html">проекты</a>
+          <a class="c-nav__link" href="/pages/public_talks/public_talks.html">выступления</a>
+          <a class="c-nav__link" href="/pages/cv/cv_starikov_yuri.md" download>резюме</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="c-main l-container p-talks">
+      <section class="c-section l-stack l-stack--md">
+        <a href="/" class="c-section-header__action">&lt; назад</a>
+        <div class="l-stack l-stack--sm">
+          <h1>публичные выступления:</h1>
+          <p class="u-text-secondary">мои публичные выступления: статьи и доклады.</p>
+        </div>
+        <div class="c-empty">
+          <h2 class="c-empty__title">coming soon</h2>
+          <p class="c-empty__text">coming soon <span class="u-text-muted">(00/00/0000)</span></p>
+        </div>
+      </section>
     </main>
+
+    <footer class="c-footer">
+      <div class="c-footer__inner l-container">
+        <div class="c-footer__grid">
+          <section class="c-footer__col">
+            <h2 class="c-footer__title">навигация</h2>
+            <a class="c-footer__link" href="/">главная</a>
+            <a class="c-footer__link" href="/pages/project_cases/projects.html">проекты</a>
+            <a class="c-footer__link" href="/pages/public_talks/public_talks.html">выступления</a>
+            <a class="c-footer__link" href="/pages/cv/cv_starikov_yuri.md" download>резюме</a>
+          </section>
+          <section class="c-footer__col">
+            <h2 class="c-footer__title">контакты</h2>
+            <a class="c-footer__link" href="mailto:yuristarikov95@gmail.com">почта</a>
+            <a class="c-footer__link" href="https://t.me/yuristarikov" target="_blank" rel="noopener">телеграм</a>
+          </section>
+          <section class="c-footer__col">
+            <h2 class="c-footer__title">в сети</h2>
+            <a class="c-footer__link" href="https://solvery.io/ru/mentor/yuristarikov" target="_blank" rel="noopener">solvery</a>
+            <a class="c-footer__link" href="https://github.com/yuristarikov" target="_blank" rel="noopener">github</a>
+            <a class="c-footer__link" href="https://www.linkedin.com/in/yuristarikov/" target="_blank" rel="noopener">linkedin</a>
+            <a class="c-footer__link" href="https://hh.ru/resume/756e5e0fff05bcca490039ed1f626842494479" target="_blank" rel="noopener">hh</a>
+            <a class="c-footer__link" href="https://career.habr.com/yuristarikov" target="_blank" rel="noopener">habr</a>
+          </section>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

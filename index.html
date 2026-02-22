@@ -1,92 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#FF79C6" />
+    <meta name="theme-color" content="#ffffff" />
     <meta name="description" content="qa engineer" />
 
-    <link rel="manifest" href="./src/manifest.webmanifest" />
-    <link rel="preload" href="./public/styles/main.css" as="style" />
-    <link rel="stylesheet" href="./public/styles/main.css" />
+    <link rel="manifest" href="/src/manifest.webmanifest" />
+    <link rel="preload" href="/public/styles/main.css" as="style" />
+    <link rel="stylesheet" href="/public/styles/main.css" />
     <title>yuri starikov</title>
   </head>
   <body>
-    <div class="content">
-      <section class="info">
-        <header>
-          <h1>yuri starikov</h1>
-          <p>qa engineer // wb tech (ex sbermarket, docsvision).</p>
-        </header>
-        <main>
-          <p class="main-paragraph">
-            специализируюсь и развиваюсь в qa, sdet, testops, golang, backend, microservices.
-          </p>
-          <p class="main-paragraph">
-            <a href="./pages/cv/cv_starikov_yuri.md" class="link" download>cv (скачать)</a>
-            /
-            <a href="../pages/project_cases/projects.html" class="link">проекты и кейсы</a>
-            / 
-            <a href="../pages/public_talks/public_talks.html" class="link">публичные выступления</a>
-          </p>
-          <br />
-        </main>
-        <footer>
-          <a class="no-link">
-            контакты:
-          </a>
-          <a
-            href="https://t.me/yuristarikov"
-            target="_blank"
-            rel="noopener"
-            class="link"
-            >telegram</a
-          >
-          <a 
-            href="mailto:yuristarikov95@gmail.com" 
-            class="link"
-            >mail</a
-          >
-          <a
-            href="https://solvery.io/ru/mentor/yuristarikov"
-            target="_blank"
-            rel="noopener"
-            class="link"
-            >solvery</a
-          >
-          <a
-            href="https://github.com/yuristarikov"
-            target="_blank"
-            rel="noopener"
-            class="link"
-            >github</a
-          >
-          <a
-            href="https://www.linkedin.com/in/yuristarikov/"
-            target="_blank"
-            rel="noopener"
-            class="link"
-            >linkedin</a
-          >
-          <a
-            href="https://hh.ru/resume/756e5e0fff05bcca490039ed1f626842494479"
-            target="_blank"
-            rel="noopener"
-            class="link"
-            >hh</a
-          >
-          <a
-            href="https://career.habr.com/yuristarikov"
-            target="_blank"
-            rel="noopener"
-            class="link"
-            >habr</a
-          >
-        </footer>
-      </section>
-      <img src="./public/styles/images/severance.gif" alt="Animated GIF" class="gif" width="350" height="225" />
-    </div>
-    <script src="src/index.js"></script>
+    <header class="c-header">
+      <div class="c-header__inner l-container">
+        <nav class="c-nav" aria-label="главная навигация">
+          <a class="c-nav__link" href="/pages/project_cases/projects.html">проекты</a>
+          <a class="c-nav__link" href="/pages/public_talks/public_talks.html">выступления</a>
+          <a class="c-nav__link" href="/pages/cv/cv_starikov_yuri.md" download>резюме</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="c-main l-container p-home">
+      <div class="p-home__layout">
+        <aside class="p-home__rail" id="contacts" aria-label="contacts and links">
+          <section class="c-card p-home__sidebar-card p-home__sidebar-card--sand l-stack l-stack--sm">
+            <h2 class="c-card__title">контакты</h2>
+            <a class="c-footer__link p-home__sidebar-link" href="mailto:yuristarikov95@gmail.com">почта</a>
+            <a class="c-footer__link p-home__sidebar-link" href="https://t.me/yuristarikov" target="_blank" rel="noopener">телеграм</a>
+          </section>
+
+          <section class="c-card p-home__sidebar-card p-home__sidebar-card--lilac l-stack l-stack--sm">
+            <h2 class="c-card__title">в сети</h2>
+            <a class="c-footer__link p-home__sidebar-link" href="https://solvery.io/ru/mentor/yuristarikov" target="_blank" rel="noopener">solvery</a>
+            <a class="c-footer__link p-home__sidebar-link" href="https://github.com/yuristarikov" target="_blank" rel="noopener">github</a>
+            <a class="c-footer__link p-home__sidebar-link" href="https://www.linkedin.com/in/yuristarikov/" target="_blank" rel="noopener">linkedin</a>
+            <a class="c-footer__link p-home__sidebar-link" href="https://hh.ru/resume/756e5e0fff05bcca490039ed1f626842494479" target="_blank" rel="noopener">hh</a>
+            <a class="c-footer__link p-home__sidebar-link" href="https://career.habr.com/yuristarikov" target="_blank" rel="noopener">habr</a>
+          </section>
+        </aside>
+
+        <div class="p-home__center">
+          <section class="c-hero l-stack l-stack--md">
+            <h1 class="c-hero__title">yuri starikov</h1>
+            <p class="c-hero__subtitle">qa engineer // wb tech (ex sbermarket, docsvision).</p>
+            <p>специализируюсь и развиваюсь в qa, sdet, testops, golang, backend, microservices.</p>
+            <div class="c-hero__actions">
+              <a href="/pages/project_cases/projects.html" class="c-button c-button--primary">проекты и кейсы</a>
+              <a href="/pages/cv/cv_starikov_yuri.md" class="c-button c-button--secondary" download>cv (скачать)</a>
+              <a href="/pages/public_talks/public_talks.html" class="c-button c-button--secondary">публичные выступления</a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="c-footer">
+      <div class="c-footer__inner l-container">
+        <div class="c-footer__grid">
+          <section class="c-footer__col">
+            <h2 class="c-footer__title">навигация</h2>
+            <a class="c-footer__link" href="/">главная</a>
+            <a class="c-footer__link" href="/pages/project_cases/projects.html">проекты</a>
+            <a class="c-footer__link" href="/pages/public_talks/public_talks.html">выступления</a>
+            <a class="c-footer__link" href="/pages/cv/cv_starikov_yuri.md" download>резюме</a>
+          </section>
+          <section class="c-footer__col">
+            <h2 class="c-footer__title">контакты</h2>
+            <a class="c-footer__link" href="mailto:yuristarikov95@gmail.com">почта</a>
+            <a class="c-footer__link" href="https://t.me/yuristarikov" target="_blank" rel="noopener">телеграм</a>
+          </section>
+          <section class="c-footer__col">
+            <h2 class="c-footer__title">в сети</h2>
+            <a class="c-footer__link" href="https://solvery.io/ru/mentor/yuristarikov" target="_blank" rel="noopener">solvery</a>
+            <a class="c-footer__link" href="https://github.com/yuristarikov" target="_blank" rel="noopener">github</a>
+            <a class="c-footer__link" href="https://www.linkedin.com/in/yuristarikov/" target="_blank" rel="noopener">linkedin</a>
+            <a class="c-footer__link" href="https://hh.ru/resume/756e5e0fff05bcca490039ed1f626842494479" target="_blank" rel="noopener">hh</a>
+            <a class="c-footer__link" href="https://career.habr.com/yuristarikov" target="_blank" rel="noopener">habr</a>
+          </section>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
