@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="резюме юрия старикова" />
+
+    <link rel="manifest" href="/src/manifest.webmanifest" />
+    <link rel="preload" href="/public/styles/main.css" as="style" />
+    <link rel="stylesheet" href="/public/styles/main.css" />
+    <title>резюме | yuri starikov</title>
+  </head>
+  <body>
+    <header class="c-header">
+      <div class="c-header__inner l-container">
+        <nav class="c-nav" aria-label="главная навигация">
+          <a class="c-nav__link" href="/pages/project_cases/projects.html">проекты</a>
+          <a class="c-nav__link" href="/pages/public_talks/public_talks.html">выступления</a>
+          <a class="c-nav__link" href="/pages/cv/">резюме</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="c-main l-container p-cv">
+      <section class="c-section l-stack l-stack--md">
+        <div class="p-cv__toolbar">
+          <a href="/" class="c-section-header__action">&lt; назад</a>
+          <button class="c-button c-button--primary" type="button" onclick="window.print()">скачать pdf</button>
+        </div>
+
+        <article class="c-card p-cv__sheet l-stack l-stack--md">
+          <header class="p-cv__header l-stack l-stack--sm">
+            <h1>Юрий Стариков</h1>
+            <p class="p-cv__lead">Senior QA Engineer // бэкенд, микросервисы, автоматизация тестирования</p>
+            <p class="p-cv__meta">Локация: Москва</p>
+            <div class="p-cv__contacts l-stack l-stack--sm">
+              <a href="https://t.me/yuristarikov" target="_blank" rel="noopener">Telegram: @yuristarikov</a>
+              <a href="mailto:yuristarikov95@gmail.com">Email: yuristarikov95@gmail.com</a>
+              <a href="https://www.linkedin.com/in/yuristarikov/" target="_blank" rel="noopener">LinkedIn: yuristarikov</a>
+            </div>
+          </header>
+
+          <section class="p-cv__section">
+            <h2>Обо мне</h2>
+            <p>
+              Инженер по качеству с упором на автоматизацию, процессы и архитектуру тестирования. Опыт выстраивания QA с нуля в командах и продуктах: от документации и стратегии до автотестов и интеграции с CI/CD.
+              Работаю с Golang, Python, Java, Kafka, Kubernetes, логами и БД — тестирование воспринимаю как инженерную дисциплину.
+            </p>
+            <p>Готов к ролям Fullstack QA, SDET и Junior QA Lead, где важны зрелый подход, инициативность и реальное влияние на качество продукта и командные практики.</p>
+          </section>
+
+          <section class="p-cv__section">
+            <h2>Навыки и стек</h2>
+
+            <h3>API и интеграционное тестирование</h3>
+            <ul>
+              <li>Тестирование REST и gRPC API (ручное и автоматизированное).</li>
+              <li>Проработка контрактов, негативные и пограничные кейсы, валидация схем.</li>
+              <li>Работа с Kafka (Protokaf, Kowl, Kadeck): просмотр топиков и партиций, чтение и запись сообщений.</li>
+              <li>Инструменты: Postman, gRPCurl, gRPCui, BloomRPC, Insomnia, Swagger.</li>
+              <li>Трафик-анализ и отладка: Charles, Proxyman, Fiddler.</li>
+              <li>Логирование и трассировка: Grafana, Kibana.</li>
+            </ul>
+
+            <h3>Автоматизация тестирования</h3>
+            <ul>
+              <li>Golang (~1 год): API и интеграционные автотесты, testing, testify, fixtures, mocks.</li>
+              <li>Python (~0.5 года): покрытие модулей автотестами, pytest, allure-pytest, параметризация и фикстуры.</li>
+              <li>Java (~4 месяца): REST/gRPC автотесты, TestNG, REST Assured, JDBC.</li>
+              <li>CI: Jenkins, GitLab CI; отчётность: Allure.</li>
+              <li>Интеграция автотестов в пайплайны, запуски по MR, ежедневные прогоны, работа с flaky-тестами и артефактами.</li>
+            </ul>
+
+            <h3>Ручное тестирование и процессы</h3>
+            <ul>
+              <li>Web, desktop, iOS/Android: функциональное, регрессионное, системное тестирование.</li>
+              <li>Оценка трудозатрат, подготовка тестовой документации (чек-листы, тест-кейсы, планы, отчёты).</li>
+              <li>Поддержка тест-артефактов в актуальном состоянии, проведение ручных тест-ранов.</li>
+              <li>TMS: TestRail, Qase.io, Microsoft Test Manager.</li>
+            </ul>
+
+            <h3>Инфраструктура и CI/CD</h3>
+            <ul>
+              <li>Git, GitLab: ветки, MR, ревью, конфликты, rebase, stash.</li>
+              <li>TeamCity, Jenkins, Allure.</li>
+              <li>Docker: запуск и отладка окружения.</li>
+              <li>Kubernetes: namespace, pods, logs через kubectl.</li>
+              <li>Базы данных: PostgreSQL, MSSQL (SQL-запросы, pgAdmin, DBeaver, SSMS).</li>
+            </ul>
+
+            <h3>Подходы и практики</h3>
+            <ul>
+              <li>Shift-left testing: активное участие на этапе требований и проектирования.</li>
+              <li>Zero Bug Policy: фокус на предотвращении дефектов до релиза.</li>
+              <li>Прозрачность тестирования: метрики, отчётность, прогнозирование трудозатрат.</li>
+              <li>Инженерный подход: DevTools, логи, SQL и CI/CD в ежедневной работе.</li>
+            </ul>
+          </section>
+
+          <section class="p-cv__section">
+            <h2>Опыт работы</h2>
+
+            <article class="p-cv__experience l-stack l-stack--sm">
+              <h3>Wildberries — Senior QA Engineer</h3>
+              <p class="p-cv__date">Сентябрь 2024 — по настоящее время, удалённо</p>
+
+              <h4 class="p-cv__subheading">Ручное тестирование</h4>
+              <ul>
+                <li>Провёл ручное тестирование двух проектов.</li>
+                <li>Обеспечил тест-кейсами и регрессом критичные фичи.</li>
+                <li>Тестировал проекты в условиях недостатка требований и жёстких сроков.</li>
+                <li>Применял shift-left подход: участвовал в грумингах, улучшал формулировки требований, находил уязвимости на этапе проектирования.</li>
+              </ul>
+
+              <h4 class="p-cv__subheading">Процессы</h4>
+              <ul>
+                <li>Обеспечил актуальность тестовой документации по всем сервисам.</li>
+                <li>Участвовал в выстраивании внутрикомандных QA-практик.</li>
+                <li>Поддерживал темп разработки в отсутствие опытных QA-инженеров.</li>
+              </ul>
+
+              <h4 class="p-cv__subheading">Автоматизация</h4>
+              <ul>
+                <li>Инициировал автоматизацию сервисов на Python (pytest + allure + grpc).</li>
+                <li>Реализовал ежедневный запуск автотестов и контроль их стабильности.</li>
+                <li>Самостоятельно писал, поддерживал и фиксировал тесты при падениях.</li>
+              </ul>
+            </article>
+
+            <article class="p-cv__experience l-stack l-stack--sm">
+              <h3>СберМаркет — Junior-Senior QA Engineer</h3>
+              <p class="p-cv__date">Май 2021 — Сентябрь 2024, удалённо</p>
+
+              <h4 class="p-cv__subheading">Ручное тестирование</h4>
+              <ul>
+                <li>Провёл полный цикл тестирования для 4 микросервисов с нуля (3 tier-1, 1 tier-3): функциональное, интеграционное, модульное, e2e, приёмка на проде.</li>
+                <li>Поддерживал запущенные в продакшн сервисы: тестирование новых фичей, регрессы, взаимодействие с внешними командами.</li>
+                <li>Работал с микросервисами: API, Kafka, взаимодействие с внешними и внутренними компонентами.</li>
+              </ul>
+
+              <h4 class="p-cv__subheading">Процессы</h4>
+              <ul>
+                <li>Полностью выстроил процессы тестирования в 2 командах разработки.</li>
+                <li>Покрыл все сервисы тестовой документацией: тест-планы, тест-кейсы, чек-листы, отчёты.</li>
+                <li>Участвовал в выстраивании QA-процессов во всём продуктовом домене (несколько команд).</li>
+                <li>Написал и внедрил регламенты по работе с баг-репортами, задачами и тест-артефактами.</li>
+                <li>Лидировал инициативы: Zero Bug Policy, контроль cycle time, анализ инцидентов со стороны QA.</li>
+              </ul>
+
+              <h4 class="p-cv__subheading">Автоматизация</h4>
+              <ul>
+                <li>Совместно со вторым QA в команде внедрил процесс автоматизации с нуля.</li>
+                <li>Определял приоритеты, ставил задачи, писал и поддерживал автотесты.</li>
+                <li>Внедрил практику запуска и фикса тестов разработчиками.</li>
+                <li>Поддерживал высокий уровень покрытия и стабильности автотестов.</li>
+              </ul>
+            </article>
+
+            <article class="p-cv__experience l-stack l-stack--sm">
+              <h3>DocsVision — QA Engineer</h3>
+              <p class="p-cv__date">Октябрь 2018 — Май 2021, гибрид</p>
+
+              <h4 class="p-cv__subheading">Ручное тестирование</h4>
+              <ul>
+                <li>Тестировал desktop и web-приложения: функциональное, регрессионное, интеграционное тестирование.</li>
+                <li>Локализовал и воспроизводил дефекты, поступившие от клиентов и техподдержки.</li>
+                <li>Настраивал стенды и тестовые полигоны для воспроизведения ошибок и запуска тестов.</li>
+                <li>Проводил декомпозицию требований, формализовал задачи для QA и разработки.</li>
+              </ul>
+
+              <h4 class="p-cv__subheading">Процессы</h4>
+              <ul>
+                <li>Поддерживал и актуализировал тест-кейсы и чек-листы.</li>
+                <li>Вёл документацию по багам и тест-артефактам.</li>
+                <li>Проверял пользовательскую документацию на соответствие требованиям и логике работы системы.</li>
+              </ul>
+
+              <h4 class="p-cv__subheading">Дополнительная активность</h4>
+              <ul>
+                <li>Наставничество: курировал новых сотрудников в QA.</li>
+                <li>Документирование: писал статьи в корпоративную базу знаний (внутренние гайды и подходы).</li>
+              </ul>
+            </article>
+
+            <article class="p-cv__experience l-stack l-stack--sm">
+              <h3>Администрация города Екатеринбурга — Специалист IT-отдела</h3>
+              <p class="p-cv__date">Июль 2017 — Сентябрь 2018, Екатеринбург</p>
+              <ul>
+                <li>Сопровождал ведомственные автоматизированные информационные системы (АИС).</li>
+                <li>Выполнял техническую поддержку пользователей и настройку рабочих мест.</li>
+                <li>Подключал и тестировал интеграции с федеральными государственными информационными системами.</li>
+                <li>Анализировал работоспособность и устранял проблемы во взаимодействии с внешними сервисами.</li>
+                <li>Работал с сервисами предоставления сведений от различных органов власти (в том числе по API).</li>
+                <li>Настраивал и применял средства защиты информации на пользовательских рабочих местах.</li>
+                <li>Участвовал в разборе нормативно-правовых актов, влияющих на работу ИТ-систем.</li>
+              </ul>
+            </article>
+          </section>
+
+          <section class="p-cv__section">
+            <h2>Образование</h2>
+            <p><strong>Уральский федеральный университет</strong>, Государственное и муниципальное управление, бакалавриат — 2017</p>
+          </section>
+
+          <section class="p-cv__section">
+            <h2>Дополнительно</h2>
+            <ul>
+              <li>Опыт менторства на платформе Solvery (2 подопечных, треки по QA).</li>
+            </ul>
+          </section>
+        </article>
+      </section>
+    </main>
+
+    <footer class="c-footer">
+      <div class="c-footer__inner l-container">
+        <div class="c-footer__grid">
+          <section class="c-footer__col">
+            <h2 class="c-footer__title">навигация</h2>
+            <a class="c-footer__link" href="/">главная</a>
+            <a class="c-footer__link" href="/pages/project_cases/projects.html">проекты</a>
+            <a class="c-footer__link" href="/pages/public_talks/public_talks.html">выступления</a>
+            <a class="c-footer__link" href="/pages/cv/">резюме</a>
+          </section>
+          <section class="c-footer__col">
+            <h2 class="c-footer__title">контакты</h2>
+            <a class="c-footer__link" href="mailto:yuristarikov95@gmail.com">почта</a>
+            <a class="c-footer__link" href="https://t.me/yuristarikov" target="_blank" rel="noopener">телеграм</a>
+          </section>
+          <section class="c-footer__col">
+            <h2 class="c-footer__title">в сети</h2>
+            <a class="c-footer__link" href="https://solvery.io/ru/mentor/yuristarikov" target="_blank" rel="noopener">solvery</a>
+            <a class="c-footer__link" href="https://github.com/yuristarikov" target="_blank" rel="noopener">github</a>
+            <a class="c-footer__link" href="https://www.linkedin.com/in/yuristarikov/" target="_blank" rel="noopener">linkedin</a>
+            <a class="c-footer__link" href="https://hh.ru/resume/756e5e0fff05bcca490039ed1f626842494479" target="_blank" rel="noopener">hh</a>
+            <a class="c-footer__link" href="https://career.habr.com/yuristarikov" target="_blank" rel="noopener">habr</a>
+          </section>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
